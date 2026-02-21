@@ -4,6 +4,8 @@
 
   <GunplayEnableTrailsName>启用子弹轨迹</GunplayEnableTrailsName>
   <GunplayEnableTrailsDesc>子弹会拖出轨迹.</GunplayEnableTrailsDesc>
+  <GunplayMaxTrailWidthName>最大子弹轨迹宽度</GunplayMaxTrailWidthName>
+  <GunplayMaxTrailWidthDesc>子弹轨迹宽度不会超过指定的值.</GunplayMaxTrailWidthDesc>
   <GunplayEnableSoundsName>启用声音</GunplayEnableSoundsName>
   <GunplayEnableSoundsDesc>改变一些武器射击和子弹碰撞的声音（可能需要重启游戏）.</GunplayEnableSoundsDesc>
   <GunplayEnableWeaponAnimationsName>启用武器动态动画</GunplayEnableWeaponAnimationsName>

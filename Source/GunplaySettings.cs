@@ -11,6 +11,7 @@ namespace Gunplay
     public class GunplaySettings : ModSettings
     {
         public bool enableTrails = true;
+        public float maxTrailWidth = 0.4f;
         public bool enableSounds = true;
         public bool enableWeaponAnimations = true;
         public bool enableEffects = true;
@@ -20,6 +21,7 @@ namespace Gunplay
         override public void ExposeData()
         {
             Scribe_Values.Look(ref enableTrails, "enableTrails");
+            Scribe_Values.Look(ref maxTrailWidth, "maxTrailWidth", 0.4f);
             Scribe_Values.Look(ref enableSounds, "enenableSoundsableTrails");
             Scribe_Values.Look(ref enableWeaponAnimations, "enableWeaponAnimations");
             Scribe_Values.Look(ref enableEffects, "enableEffects");
@@ -31,6 +33,7 @@ namespace Gunplay
             Listing_Standard listing_Standard = new Listing_Standard();
             listing_Standard.Begin(inRect);
             listing_Standard.CheckboxLabeled("GunplayEnableTrailsName".Translate(), ref enableTrails, "GunplayEnableTrailsDesc".Translate());
+            listing_Standard.SliderLabeled("GunplayMaxTrailWidthName".Translate(), ref maxTrailWidth, "GunplayMaxTrailWidthDesc".Translate(), 0.001f, 2.0f, maxTrailWidth.ToString());
             listing_Standard.CheckboxLabeled("GunplayEnableSoundsName".Translate(), ref enableSounds, "GunplayEnableSoundsDesc".Translate());
             listing_Standard.CheckboxLabeled("GunplayEnableWeaponAnimationsName".Translate(), ref enableWeaponAnimations, "GunplayEnableWeaponAnimationsDesc".Translate());
             listing_Standard.CheckboxLabeled("GunplayEnableEffectsName".Translate(), ref enableEffects, "GunplayEnableEffectsDesc".Translate());

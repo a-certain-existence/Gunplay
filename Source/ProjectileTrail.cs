@@ -36,7 +36,7 @@ namespace Gunplay
 
             length = speed * 15f;
             dir = (b - a).normalized;
-            width = proj.DamageAmount * 0.006f;
+            width = Mathf.Min(proj.DamageAmount * 0.006f, Gunplay.settings.maxTrailWidth);
 
 
             ProjectileTrailDef trailDef = def as ProjectileTrailDef;

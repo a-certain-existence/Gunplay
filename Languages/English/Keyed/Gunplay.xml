@@ -4,6 +4,8 @@
   
   <GunplayEnableTrailsName>Enable trails</GunplayEnableTrailsName>
   <GunplayEnableTrailsDesc>Draw long trails for projectiles.</GunplayEnableTrailsDesc>
+  <GunplayMaxTrailWidthName>Maximum trail width</GunplayMaxTrailWidthName>
+  <GunplayMaxTrailWidthDesc>Trail width will not exceed the specified value.</GunplayMaxTrailWidthDesc>
   <GunplayEnableSoundsName>Enable sounds</GunplayEnableSoundsName>
   <GunplayEnableSoundsDesc>Change fire and projectile impact sounds for some weapons. May require restart.</GunplayEnableSoundsDesc>
   <GunplayEnableWeaponAnimationsName>Enable weapon animations</GunplayEnableWeaponAnimationsName>
